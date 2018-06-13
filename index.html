@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                        <meta charset="utf-8" />
+                        <title>Crystal Collector</title>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        
+                        <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700" rel="stylesheet">
+                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        </head>
+
+<!--MAIN CONTENT-->
+    <body style="background-image: url(./assets/images/dark-grey-terrazzo.png); ">
+
+        <div class="container">
+            
+<!-- Jumbotron header--> 
+                <div class="jumbotron" style="background-color:blueviolet;">
+                        <div class="container">
+                          <h1 class="text-center" style="color: whitesmoke; font-family: 'Oleo Script Swash Caps', cursive; font-size: 100px;">Crystal Collector</h1>      
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+<!--Instrunction/howto-->
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                            <div class="card-header text-white" style="background-color:blueviolet;"> <h2 style="color: whitesmoke; font-family: 'Oleo Script Swash Caps', cursive; font-size: 25px; text-align: center;">How to Play</h2></div>
+                                            <div class="card-body bg-light text-dark"> 
+                                                    <p>
+                                                            You will be given a random number at the start of the game. 
+                                                          </p>
+                                                          <p>
+                                                            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score.
+                                                          </p>
+                                                          <p> 
+                                                            You win the game by matching your total score to the random number given to you at the beginning of the game. You lose the came if your total score goes higher than the random number.
+                                                          </p>
+                                                          <p>
+                                                            The values of each of the crystals below is hidden from you until you click on it. 
+                                                          </p>
+                                                          <p>
+                                                            Each time when the game starts, the same will change the values of each of the crystals below. 
+                                                        </p>
+                                            </div>
+                                            <div class="col-lg-1"></div>
+                                            </div> 
+                                  </div>
+                                  
+                
+                <div class="row">
+                        <div class="col-12">
+                            <br>
+                        </div>
+                </div>
+<!--random number/target score-->
+                <div class="row">
+            <div class="col-sm-8">
+                    <div class="card bg-warning text-white">
+                            <div class="card-body" > <h2 style="color: whitesmoke; font-family: 'Oleo Script Swash Caps', cursive; font-size: 25px; text-align: left;">Your Target score is...</h2></div>
+                            <p style="color: grey; font-family: 'Oleo Script Swash Caps', cursive; font-size: 85px; text-align: center;" id="targetScore"></p>
+                          </div>
+                     </div>
+<!--Win and Loss Counter-->
+                     <div class="col-sm-4">
+                            <div class="card bg-secondary text-white">
+                                    <div class="card-body">
+                                        <h2 style="color: whitesmoke; font-family: 'Oleo Script Swash Caps', cursive; font-size: 25px; text-align: center;">Wins:</h2>
+                                        <p style="color: goldenrod; font-family: 'Oleo Script Swash Caps', cursive; font-size: 25px; text-align: center;" id="winCount">0</p>
+                                        <h2 style="color: whitesmoke; font-family: 'Oleo Script Swash Caps', cursive; font-size: 25px; text-align: center;">Loses:</h2>
+                                        <p style="color: goldenrod; font-family: 'Oleo Script Swash Caps', cursive; font-size: 25px; text-align: center;" id="lossCount">0</p>
+                                    </div>
+                                  </div>
+                     </div>
+</div>
+
+<div class="row">
+        <div class="col-12">
+            <br>
+        </div>
+</div>
+<!-- where the crystals go -->
+<div class="row">
+        <div class="col-sm-12">
+            <div class="card-header text-white" style="background-color:blueviolet;"> 
+                <h2 style="color: whitesmoke; font-family: 'Oleo Script Swash Caps', cursive; font-size: 25px; text-align: center;">Crystals available:</h2>
+            </div>
+            <div class="card-body bg-light text-dark"> 
+                <img src="" alt="">
+                <div class="card-deck">
+                        <div class="card bg-primary">
+                          <div class="card-body text-center">
+                            <p class="card-text"><img src="./assets/images/Sapphire.png" id="Sapphire"></p>
+                          </div>
+                        </div>
+                        <div class="card bg-light">
+                          <div class="card-body text-center">
+                            <p class="card-text"><img src="./assets/images/diamond.png" id="diamond"></p>
+                          </div>
+                        </div>
+                        <div class="card bg-success">
+                          <div class="card-body text-center">
+                            <p class="card-text"><img src="./assets/images/Emerald.png" id="Emerald"></p>
+                          </div>
+                        </div>
+                        <div class="card bg-danger">
+                          <div class="card-body text-center">
+                            <p class="card-text"><img src="./assets/images/Ruby.png" id="ruby"></p>
+                          </div>
+                        </div> 
+                      </div>                
+            </div>
+            </div>
+</div>
+
+<div class="row">
+        <div class="col-12">
+            <br>
+        </div>
+</div>
+<!-- Your Score Counter -->
+<div class="row">
+        <div class="col-sm-12">
+            <div class="card-header text-white" style="background-color:blueviolet;"> 
+                <h2 style="color: whitesmoke; font-family: 'Oleo Script Swash Caps', cursive; font-size: 25px; text-align:center;">Your Total Score is:</h2>
+            </div>
+            <div class="card-body bg-light text-dark"> 
+                    <p style="color: red; font-family: 'Oleo Script Swash Caps', cursive; font-size: 85px; text-align: center;" id="yourScore" >0</p>
+                
+            </div>
+
+            
+            </div>
+            </div>
+
+    </div>
+    <br>
+    <br>
+
+<!--Main Game Logics-->
+<!--link to jQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--JS Link-->  
+<script src="./assets/javascript/javascript.js"></script>
+        </body>    
+</html>
