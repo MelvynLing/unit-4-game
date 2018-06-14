@@ -44,11 +44,11 @@
 	//new target score (btw 19 & 120)
 		targetScore=getRandom(19,120);
 
-	//diff values for crystals (btw 1 & 18)
-		crystal.Sapphire.value = getRandom(1,18);
-		crystal.diamond.value = getRandom(1,18);
-		crystal.Emerald.value = getRandom(1,18);
-		crystal.ruby.value = getRandom(1,18);
+	//diff values for crystals (btw 1 & 12)
+		crystal.Sapphire.value = getRandom(1,12);
+		crystal.diamond.value = getRandom(1,12);
+		crystal.Emerald.value = getRandom(1,12);
+		crystal.ruby.value = getRandom(1,12);
 
 	//change html to reflect changes happening
 		$("#yourScore").html(currentScore);
