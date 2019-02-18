@@ -1,5 +1,5 @@
 # Crystal Collector
-# follow this link to see the app live: #
+* follow this link to see the app live: *
 https://melvynling.github.io/unit-4-game/
 
 ## Objective:
