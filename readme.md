@@ -1,8 +1,9 @@
 # Crystal Collector
 
-[]
 follow this link to see the app live:
 https://melvynling.github.io/unit-4-game/
+![](assets/cc1.png)
+------
 
 ## Objective:
 
@@ -14,13 +15,13 @@ I used jQuery to program the logic associated with this game, and bootstrap for 
 Ive enjoyed making this game. my pseudocode helped when setting up the logic.
 
 ## Instructions:
-[]
+![](assets/cc2.png)
 * You will be given a random number at the start of the game. 
-[]
+![](assets/cc3.png)
 * There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score. The values of each of the crystals below is hidden from you until you click on it. 
-[]
+![](assets/cc4.png)
 * You win the game by matching your total score to the random number given to you at the beginning of the game. You lose the came if your total score goes higher than the random number.
-[]
+![](assets/cc5.png)
 * Each time when the game starts, all number values are randomized, making the game different each time you play.
 
 
